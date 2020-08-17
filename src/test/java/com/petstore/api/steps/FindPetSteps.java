@@ -34,11 +34,11 @@ public class FindPetSteps {
 
         Response response = helper.getVerb().getResponse();
         Pets[] pets =  response.as(Pets[].class, ObjectMapperType.GSON);
-        int numberofDoggie = 0;
+        int numberOfDoggie = 0;
         for (Pets pet: pets) {
             if(!pet.getName().equalsIgnoreCase("doggie")) continue;
-            numberofDoggie = numberofDoggie+1;
+            numberOfDoggie = numberOfDoggie +1;
         }
-        Assert.assertEquals(numberofDoggie,192);
+        Assert.assertEquals(numberOfDoggie,192);
     }
 }

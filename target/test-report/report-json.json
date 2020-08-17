@@ -1,0 +1,76 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 845367260,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksSteps.before()"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "Find a pet by Status - Available",
+        "description": "",
+        "id": "find-all-pet-by-status;find-a-pet-by-status---available",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 636266858,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I have access to pet service",
+            "match": {
+              "location": "FindPetSteps.iHaveAccessToPetService()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1570672804,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I find pet by availability",
+            "match": {
+              "location": "FindPetSteps.iFindPetByAvailability()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 174504966,
+              "error_message": "java.lang.AssertionError: expected:\u003c190\u003e but was:\u003c192\u003e\n\tat org.junit.Assert.fail(Assert.java:88)\n\tat org.junit.Assert.failNotEquals(Assert.java:834)\n\tat org.junit.Assert.assertEquals(Assert.java:645)\n\tat org.junit.Assert.assertEquals(Assert.java:631)\n\tat com.petstore.api.steps.FindPetSteps.thePetIsAvailable(FindPetSteps.java:42)\n\tat ✽.Then the pet is available(Features/Pets/PS001FindPetByStatus.feature:11)\n",
+              "status": "failed"
+            },
+            "line": 11,
+            "name": "the pet is available",
+            "match": {
+              "location": "FindPetSteps.thePetIsAvailable()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 7,
+            "name": "@FindPetByStatus"
+          }
+        ]
+      }
+    ],
+    "name": "Find all pet by status",
+    "description": "As an aspiring pet owner\r\nI want to find some pet from this app\r\nSo I can buy one of them",
+    "id": "find-all-pet-by-status",
+    "keyword": "Feature",
+    "uri": "Features/Pets/PS001FindPetByStatus.feature"
+  }
+]

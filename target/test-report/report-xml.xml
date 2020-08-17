@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="3.226812">
+    <testcase classname="Find all pet by status" name="Find a pet by Status - Available" time="3.226812">
+        <failure message="java.lang.AssertionError: expected:&lt;190&gt; but was:&lt;192&gt;&#10;&#9;at org.junit.Assert.fail(Assert.java:88)&#10;&#9;at org.junit.Assert.failNotEquals(Assert.java:834)&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:645)&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:631)&#10;&#9;at com.petstore.api.steps.FindPetSteps.thePetIsAvailable(FindPetSteps.java:42)&#10;&#9;at ✽.Then the pet is available(Features/Pets/PS001FindPetByStatus.feature:11)&#10;">
+            <![CDATA[Given I have access to pet service..........................................passed
+When I find pet by availability.............................................passed
+Then the pet is available...................................................failed
+
+StackTrace:
+java.lang.AssertionError: expected:<190> but was:<192>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:645)
+	at org.junit.Assert.assertEquals(Assert.java:631)
+	at com.petstore.api.steps.FindPetSteps.thePetIsAvailable(FindPetSteps.java:42)
+	at ✽.Then the pet is available(Features/Pets/PS001FindPetByStatus.feature:11)
+]]>
+        </failure>
+    </testcase>
+</testsuite>

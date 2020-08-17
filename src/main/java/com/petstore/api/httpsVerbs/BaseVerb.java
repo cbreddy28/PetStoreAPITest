@@ -15,13 +15,7 @@ public class BaseVerb {
         requestSpecification = given()
                 .accept(mediaType)
                 .contentType(mediaType);
-        //.auth().preemptive().oauth2("");
-        //.auth().preemptive().basic("kumal", "password123");
         return requestSpecification;
     }
-
-
-    public RequestSpecification getRequestSpecification() {
-        return requestSpecification;
-    }
+    
 }
